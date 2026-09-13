@@ -32,7 +32,17 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative flex h-full flex-col justify-between">
+    <div   className="
+    relative
+    flex
+    min-h-[420px]
+    flex-col
+    justify-between
+
+    sm:min-h-[400px]
+    xl:min-h-0
+  
+  ">
       {/* Ambient background glow */}
       <div
         className="pointer-events-none absolute -left-24 -top-24 h-72 w-72  rounded-full  bg-purple-600/[0.08] blur-[100px]"

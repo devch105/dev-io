@@ -20,7 +20,14 @@ const About = () => {
   ];
 
   return (
-    <div className="flex h-full flex-col justify-between">
+    <div  className="
+    flex
+    min-h-[280px]
+    flex-col
+    justify-between
+
+    xl:min-h-0
+  ">
       {/* Header */}
       <div>
         <div className="flex items-start justify-between">

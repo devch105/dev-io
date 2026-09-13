@@ -5,7 +5,17 @@ import  { IMAGES } from "../../assets/images/images";
 
 const Profile = () => {
   return (
-    <div className="relative h-full min-h-[300px] overflow-hidden">
+    <div  className="
+    relative
+    h-full
+    min-h-[380px]
+    overflow-hidden
+
+    sm:min-h-[420px]
+
+    xl:min-h-0
+  
+  ">
       {/* Profile Image */}
       <motion.img
         src={IMAGES.Profile_image}

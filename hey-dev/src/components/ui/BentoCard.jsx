@@ -9,16 +9,24 @@ const BentoCard = ({
     <div
       id={id}
       className={`
-        group relative overflow-hidden
+        group
+        relative
+        h-full
+        overflow-hidden
+
         rounded-3xl
-        border border-white/[0.08]
+        border
+        border-white/[0.08]
         bg-[#111116]
+
         p-6
 
         ${
           hover
             ? `
-              transition-all duration-300 ease-out
+              transition-all
+              duration-300
+              ease-out
               hover:-translate-y-1
               hover:border-purple-500/25
               hover:bg-[#131319]
@@ -28,33 +36,34 @@ const BentoCard = ({
 
         ${
           glow
-            ? `
-              shadow-[0_0_60px_rgba(168,85,247,0.05)]
-            `
+            ? "shadow-[0_0_60px_rgba(168,85,247,0.05)]"
             : ""
         }
 
         ${className}
       `}
     >
-      {/* Subtle hover glow */}
+      {/* Glow */}
       {hover && (
         <div
           className="
             pointer-events-none
-            absolute -right-20 -top-20
-            h-40 w-40
+            absolute
+            -right-20
+            -top-20
+            h-40
+            w-40
             rounded-full
             bg-purple-500/0
             blur-3xl
-            transition-all duration-500
+            transition-all
+            duration-500
             group-hover:bg-purple-500/[0.06]
           "
         />
       )}
 
-      {/* Card content */}
-      <div className="relative z-10 h-fit">
+      <div className="relative z-10">
         {children}
       </div>
     </div>

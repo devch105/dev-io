@@ -17,9 +17,11 @@ const BentoGrid = ({ children, className = "" }) => {
           grid
           grid-cols-1
           gap-4
+
           md:grid-cols-2
+
           xl:grid-cols-4
-          auto-rows-[180px]
+          xl:auto-rows-[180px]
         "
       >
         {children}
