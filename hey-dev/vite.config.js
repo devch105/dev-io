@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/hey-dev/',
+  base: '/dev-io/',
 })
