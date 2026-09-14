@@ -213,18 +213,17 @@ const Hero = () => {
             max-w-xl
             text-sm
             leading-6
+            tracking-wide
             text-zinc-500
             sm:text-base
           "
         >
-          I build scalable web applications, solve challenging
-          problems, and turn ideas into reliable real-world
-          products.
+          Passionate about building scalable backend systems, modern web applications, and AI-powered products using Java, Spring Boot, Golang, React, and Cloud technologies. I enjoy solving challenging problems, designing distributed systems, and turning ideas into production-ready applications.
         </motion.p>
       </motion.div>
 
       {/* Bottom area */}
-      <div className="relative mt-8">
+      <div className=" mt-8">
         <div className="flex flex-wrap items-center gap-3">
           {/* Primary CTA */}
           <motion.a
@@ -297,7 +296,7 @@ const Hero = () => {
           <div className="mx-1 hidden h-6 w-px bg-white/10 sm:block" />
 
           {/* Social links */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 ">
             {socials.map((social) => {
               const Icon = social.icon;
 
@@ -311,10 +310,11 @@ const Hero = () => {
                   }}
                   className="
                     flex
-                    h-9
-                    w-9
+                    h-10
+                    w-10
+                    gap-4
                     items-center
-                    justify-center
+                    justify-around
                     rounded-lg
                     text-zinc-500
 
@@ -323,7 +323,7 @@ const Hero = () => {
                     hover:text-white
                   "
                 >
-                  <Icon size={17} />
+                  <Icon size={22} />
                 </motion.a>
               );
             })}
