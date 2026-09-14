@@ -21,7 +21,7 @@ const BentoGrid = ({ children, className = "" }) => {
           md:grid-cols-2
 
           xl:grid-cols-4
-          xl:auto-rows-[180px]
+          
         "
       >
         {children}

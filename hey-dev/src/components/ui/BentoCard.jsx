@@ -46,19 +46,9 @@ const BentoCard = ({
       {/* Glow */}
       {hover && (
         <div
-          className="
-            pointer-events-none
-            absolute
-            -right-20
-            -top-20
-            h-40
-            w-40
-            rounded-full
-            bg-purple-500/0
-            blur-3xl
-            transition-all
-            duration-500
-            group-hover:bg-purple-500/[0.06]
+          className=" pointer-events-none  absolute -right-20 -top-20 h-40 w-40
+            rounded-full bg-purple-500/0 blur-3xl transition-all duration-500
+ group-hover:bg-purple-500/[0.06]
           "
         />
       )}

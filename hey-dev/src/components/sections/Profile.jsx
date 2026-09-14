@@ -5,74 +5,21 @@ import  { IMAGES } from "../../assets/images/images";
 
 const Profile = () => {
   return (
-    <div  className="
-    relative
-    h-full
-    min-h-[380px]
-    overflow-hidden
-
-    sm:min-h-[420px]
-
-    xl:min-h-0
-  
-  ">
+    <div className="relative h-full min-h-[380px] overflow-hidden sm:min-h-[420px] xl:min-h-[480px] rounded-md">
       {/* Profile Image */}
-      <motion.img
-        src={IMAGES.Profile_image}
-        alt="Dev Dhama"
+      <motion.img src={IMAGES.Profile_image} alt="Dev Dhama"
         initial={{ scale: 1.05 }}
         animate={{ scale: 1 }}
         transition={{
           duration: 1.2,
           ease: "easeOut",
-        }}
-        className="
-          absolute
-          inset-0
-          h-full
-          w-full
-          object-cover
-        "
-      />
-
+        }} className=" absolute inset-0 h-full w-full object-cover "/>
       {/* Top ambient gradient */}
-      <div
-        className="
-          pointer-events-none
-          absolute
-          inset-0
-          bg-gradient-to-br
-          from-purple-500/20
-          via-transparent
-          to-transparent
-        "
-      />
-
+      <div className=" pointer-events-none absolute inset-0 bg-gradient-to-br  from-purple-500/20 via-transparent to-transparent "/>
       {/* Bottom gradient */}
-      <div
-        className="
-          pointer-events-none
-          absolute
-          inset-0
-          bg-gradient-to-t
-          from-[#111116]
-          via-[#111116]/20
-          to-transparent
-        "
-      />
-
+      <div className=" pointer-events-none absolute inset-0 bg-gradient-to-t from-[#111116] via-[#111116]/20 to-transparent "/>
       {/* Image edge vignette */}
-      <div
-        className="
-          pointer-events-none
-          absolute
-          inset-0
-          ring-1
-          ring-inset
-          ring-white/[0.05]
-        "
-      />
-
+      <div className=" pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.05]"/>
       {/* Content */}
       <div className="absolute inset-x-0 bottom-0 p-6">
         <div className="flex items-end justify-between gap-4">

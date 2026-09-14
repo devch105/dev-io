@@ -1,1 +1,48 @@
 @import "tailwindcss";
+.skill-marquee {
+  display: flex;
+  width: max-content;
+  gap: 10px;
+  will-change: transform;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.skill-marquee-left {
+  animation-name: marquee-left;
+}
+
+.skill-marquee-right {
+  animation-name: marquee-right;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 5px));
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(calc(-50% - 5px));
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.skill-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-marquee {
+    animation: none;
+    transform: translateX(0);
+  }
+}

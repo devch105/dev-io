@@ -45,12 +45,12 @@ const Hero = () => {
   ">
       {/* Ambient background glow */}
       <div
-        className="pointer-events-none absolute -left-24 -top-24 h-72 w-72  rounded-full  bg-purple-600/[0.08] blur-[100px]"
+        className="pointer-events-none absolute -left-24 -top-24 h-72 w-72  rounded-full  bg-yellow-600/[0.08] blur-[100px]"
       />
 
       {/* Secondary glow */}
       <div
-        className=" pointer-events-none absolute -bottom-32 right-0 h-64 w-64 rounded-full bg-violet-600/[0.05] blur-[100px]"
+        className=" pointer-events-none absolute -bottom-32 right-0 h-64 w-64 rounded-full bg-orange-600/[0.05] blur-[100px]"
       />
 
       {/* Content */}
@@ -104,7 +104,7 @@ const Hero = () => {
                 w-full
                 animate-ping
                 rounded-full
-                bg-purple-400
+                bg-yellow-400
                 opacity-50
               "
             />
@@ -116,12 +116,12 @@ const Hero = () => {
                 h-2
                 w-2
                 rounded-full
-                bg-purple-400
+                bg-yellow-400
               "
             />
           </span>
 
-          <span className="text-xs font-medium text-purple-300">
+          <span className="text-xs font-medium text-yellow-300">
             Available for opportunities
           </span>
         </motion.div>
@@ -168,7 +168,7 @@ const Hero = () => {
           "
         >
           Dev Dhama
-          <span className="text-purple-400">.</span>
+          <span className="text-yellow-400">.</span>
         </motion.h1>
 
         {/* Role */}
