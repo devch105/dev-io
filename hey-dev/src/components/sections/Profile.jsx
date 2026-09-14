@@ -13,7 +13,7 @@ const Profile = () => {
         transition={{
           duration: 1.2,
           ease: "easeOut",
-        }} className=" absolute inset-0 h-full w-full object-cover "/>
+        }} className=" absolute inset-0  w-full object-fit "/>
       {/* Top ambient gradient */}
       <div className=" pointer-events-none absolute inset-0 bg-gradient-to-br  from-purple-500/20 via-transparent to-transparent "/>
       {/* Bottom gradient */}
