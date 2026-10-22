@@ -22,13 +22,9 @@ const Projects = () => {
             Projects
           </p>
 
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">
-            Selected Work
-          </h2>
-
-          <p className="mt-1 text-sm text-zinc-500">
+          <h2 className="mt-1 text-sm text-zinc-500">
             Things I've built and shipped
-          </p>
+          </h2>
         </div>
 
         <motion.div

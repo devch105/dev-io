@@ -40,7 +40,7 @@ const Achievements = () => {
               text-white
             "
           >
-            530<span className="text-yellow-400">+</span>
+            550<span className="text-yellow-400">+</span>
           </motion.p>
 
           <p className="mt-1 text-xs text-zinc-500">

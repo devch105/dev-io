@@ -1,80 +1,100 @@
-import {motion} from "motion/react";
-import {ArrowUpRight} from "lucide-react";
 
-import Stat from "../ui/Stat"
+import { motion } from "motion/react";
+import {
+  ArrowUpRight,
+  Code2,
+  BrainCircuit,
+  Server,
+} from "lucide-react";
+
+import Stat from "../ui/Stat";
+import { aboutContent } from "../../data/about";
+
+const icons = {
+  server: Server,
+  brain: BrainCircuit,
+  code: Code2,
+};
+
 const About = () => {
-
-   const stats = [
-    {
-      value: "2+",
-      label: "Years Learning",
-    },
-    {
-      value: "100+",
-      label: "Problems Solved",
-    },
-    {
-      value: "5+",
-      label: "Projects Built",
-    },
-  ];
+  const { eyebrow, heading, subheading, paragraphs, focusAreas, stats } =
+    aboutContent;
 
   return (
-    <div className = "relative flex h-fit flex-col justify-between">
-      <div className="pointer-events-none 
-      absolute -left-24 -top-24 
-      h-72 w-72 rounded-full 
-      bg-yellow-800/8 blur-[100px]"/>
-      <div className="pointer-events-none 
-      absolute -bottom-32 right-0 
-      h-64 w-64 rounded-full 
-      bg-yellow-600/5 blur "/>
+    <section className="relative isolate h-fit overflow-hidden rounded-2xl p-3">
+      {/* Ambient background */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-24 -top-24 -z-10 h-72 w-72 rounded-full bg-yellow-500/[0.07] blur-[100px]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-32 -right-16 -z-10 h-64 w-64 rounded-full bg-amber-500/[0.05] blur-[90px]"
+      />
 
-      <div className="flex items-start justify-between">
-
-          <div>
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-yellow-400">
-              About
+      {/* Header */}
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-yellow-400" />
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-yellow-400">
+              {eyebrow}
             </p>
-
-            <h2 className="mt-2 text-xl font-semibold tracking-tight text-white">
-              A little about me
-            </h2>
           </div>
 
-            <motion.div
-            animate={{
-              y: [0, -3, 0],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="
-              flex
-              h-8
-              w-8
-              items-center
-              justify-center
-              rounded-full
-              border
-              border-white/10
-              text-zinc-500
-            "
-          >
-            <ArrowUpRight size={15} />
-          </motion.div>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+            {heading}
+            <span className="block text-zinc-500">
+              {subheading}
+            </span>
+          </h2>
+        </div>
 
+        <motion.div
+          animate={{ y: [0, -4, 0] }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-yellow-400"
+        >
+          <ArrowUpRight size={18} />
+        </motion.div>
       </div>
 
-       <p className="mt-4 max-w-2xl text-sm leading-6 text-zinc-500">
-          I'm a software engineer who enjoys building web
-          applications, solving data structures and algorithms
-          problems, and continuously learning new technologies.
-        </p>
+      {/* Introduction */}
+      <div className="mt-5 max-w-2xl space-y-3 text-sm leading-7 text-zinc-400 sm:text-base">
+        {paragraphs.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
 
-       <div className="mt-6 grid grid-cols-3 border-t border-white/[0.06] pt-5">
+      {/* Focus areas */}
+      <div className="mt-6 flex flex-wrap gap-2">
+        {focusAreas.map(({ icon, label }, index) => {
+          const Icon = icons[icon];
+
+          return (
+            <motion.div
+              key={label}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.35,
+                delay: index * 0.1,
+              }}
+              className="inline-flex items-center gap-2 rounded-lg border border-white/[0.08] bg-white/[0.025] px-3 py-2 text-xs font-medium text-zinc-300 transition-colors hover:border-yellow-400/30 hover:bg-yellow-400/[0.04] sm:text-sm"
+            >
+              <Icon size={15} className="text-yellow-400" />
+              {label}
+            </motion.div>
+          );
+        })}
+      </div>
+
+      {/* Stats
+      <div className="mt-7 grid grid-cols-3 border-t border-white/[0.08] pt-5">
         {stats.map((stat) => (
           <Stat
             key={stat.label}
@@ -82,10 +102,9 @@ const About = () => {
             label={stat.label}
           />
         ))}
-      </div>
+      </div> */}
+    </section>
+  );
+};
 
-    </div>
-  )
-}
-
-export default About
+export default About;

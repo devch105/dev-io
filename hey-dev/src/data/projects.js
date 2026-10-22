@@ -20,8 +20,34 @@ export const projects = [
     ],
     github: "https://github.com/devch105/goshortly.in",
     live: "https://goshortly.onrender.com/login",
-    featured: true,
+    featured: false,
   },
+
+  {
+  name: "GitCrawler",
+  type: "AI-Powered Repository Intelligence",
+  description:
+    "An AI-powered GitHub repository intelligence platform featuring codebase indexing, RAG-based code search, and contextual AI chat to help developers understand repositories.",
+  tech: [
+    "Java 21",
+    "Spring Boot",
+    "Spring AI",
+    "Next.js",
+    "TypeScript",
+    "PostgreSQL",
+    "pgvector",
+    "GitHub OAuth",
+    "Docker",
+  ],
+  stats: [
+    { value: "AI-Powered", label: "Codebase Insights" },
+    { value: "RAG", label: "Contextual Chat" },
+    { value: "Vector Search", label: "Code Retrieval" },
+  ],
+  github: "https://github.com/devch105/gitcralwer-ui",
+  live: "https://gitcralwer-ui.vercel.app/",
+  featured: true,
+},
 
   {
     name: "Cloud-Share",
@@ -34,6 +60,7 @@ export const projects = [
       "MongoDB",
       "Clerk",
       "Razorpay",
+      "GCP",
     ],
     stats: [
       { value: "50+", label: "Active Users" },
