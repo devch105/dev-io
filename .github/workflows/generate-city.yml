@@ -1,0 +1,30 @@
+name: Generate 3D City
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate City Skyline
+        uses: Haruko386-UnOffical/github-city@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          theme: github 
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f city.svg
+          git commit -m "chore: update 3D city skyline" || exit 0
+          git push
