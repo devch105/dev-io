@@ -133,6 +133,8 @@ App
 
 ---
 
+![City Skyline](./github.svg)
+
 # 4. Bento Card System
 
 Instead of styling every card independently, create one reusable component.
