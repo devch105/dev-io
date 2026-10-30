@@ -3335,6 +3335,15 @@
     
             </g>
         
+            <g>
+                
+        <polygon points="924,571 940,579 940,586 924,578" fill="#8ad596" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        <polygon points="940,579 956,571 956,578 940,586" fill="#7ac284" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        <polygon points="940,563 956,571 940,579 924,571" fill="#9be9a8" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        
+    
+            </g>
+        
         
         
     </g>
