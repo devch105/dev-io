@@ -3157,9 +3157,9 @@
         
             <g>
                 
-        <polygon points="1024,526 1040,534 1040,536 1024,528" fill="#e1e4e8" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
-        <polygon points="1040,534 1056,526 1056,528 1040,536" fill="#d1d5da" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
-        <polygon points="1040,518 1056,526 1040,534 1024,526" fill="#ebedf0" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        <polygon points="1024,522.5 1040,530.5 1040,536 1024,528" fill="#8ad596" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        <polygon points="1040,530.5 1056,522.5 1056,528 1040,536" fill="#7ac284" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        <polygon points="1040,514.5 1056,522.5 1040,530.5 1024,522.5" fill="#9be9a8" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
         
     
             </g>
@@ -3205,6 +3205,15 @@
         <polygon points="964,536 980,544 980,546 964,538" fill="#e1e4e8" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
         <polygon points="980,544 996,536 996,538 980,546" fill="#d1d5da" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
         <polygon points="980,528 996,536 980,544 964,536" fill="#ebedf0" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        
+    
+            </g>
+        
+            <g>
+                
+        <polygon points="1004,536 1020,544 1020,546 1004,538" fill="#e1e4e8" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        <polygon points="1020,544 1036,536 1036,538 1020,546" fill="#d1d5da" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
+        <polygon points="1020,528 1036,536 1020,544 1004,536" fill="#ebedf0" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" />
         
     
             </g>
